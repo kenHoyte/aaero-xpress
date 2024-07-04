@@ -15,7 +15,7 @@ return new class extends Migration
             $table->uuid('id')->primary();
             $table->unsignedBigInteger('shipment_id')->nullable();
             $table->unsignedBigInteger('custshipment_id')->nullable();
-            $table->unsignedBigInteger('tracking_number')->unique();
+            $table->string('tracking_number')->unique();
             $table->string('package_image')->nullable();
             $table->string('exp_description')->nullable();
             $table->string('rec_description')->nullable();
